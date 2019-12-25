@@ -1,8 +1,8 @@
 # Test against this version of Node.js
 environment:
-matrix:
-# node.js
-- nodejs_version:"6"
+  matrix:
+  # node.js
+  - nodejs_version:"6"
 #install scripts. (run after repo cloning)
 install:
   # Get the latest stable version of Node.js or io.js
