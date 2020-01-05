@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 54031496,
+      "firstName": "Concepcion",
+      "lastName": "Nader",
+      "email": "Efrain_Hirthe@hotmail.com"
+    },
+    {
+      "id": 26003902,
+      "firstName": "Chad",
+      "lastName": "Yundt",
+      "email": "Jules.Parker@hotmail.com"
+    },
+    {
+      "id": 846466,
+      "firstName": "Candice",
+      "lastName": "Fisher",
+      "email": "Shawn_Hessel63@hotmail.com"
+    },
+    {
+      "id": 32093890,
+      "firstName": "Carlo",
+      "lastName": "Wyman",
+      "email": "Vanessa.Kertzmann48@gmail.com"
+    }
+  ]
+}
