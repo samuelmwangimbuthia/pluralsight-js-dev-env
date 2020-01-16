@@ -1,7 +1,7 @@
-import 'whatwg-fetch';
+import 'whatwg-fetch'; 
 import getBaseURL from './baseURL';
 
-const baseURL = getBaseURL();
+const baseURL = getBaseURL(); 
 
 
 export function getUsers() {
@@ -9,11 +9,11 @@ export function getUsers() {
 }
 
 export function deleteUsers(id) {
-    return del('users/${id}');
+    return del('Users/${id}');
 }
 
 function get(url){
-    return fetch(baseURL + url).then(onSuccess, onError);
+    return fetch(baseUrl + url).then(onSuccess, onError);
 }
 // Can't call func delete since reserved word.
 function del(url){

@@ -1,10 +1,11 @@
 import './index.css';
 
-import {getUsers, deleteUsers} from './api/userApi';
+import {getUsers} from './api/userApi';
 
 // populate table of users via API call.
 getUsers().then(result => {
     let usersBody ="";
+
     result.forEach(user => {
         usersBody+= `<tr>
         <td><a href="#" data-id="${user.id}" class="deleteUser">Delete</a></td>
@@ -16,7 +17,7 @@ getUsers().then(result => {
     });
 
     global.document.getElementById('users').innerHTML = usersBody;
-    
+
     const deleteLinks = global.document.getElementByClassName('deleteUser');
     //must use array.from to create a real array from a DOM collection
     // getElementByClassName only returns an "array like" object 
@@ -29,7 +30,7 @@ getUsers().then(result => {
             const row = element.parentNode.parentNode;
             row.parentNode.removeChild(row);
         };
-    });
+    }); 
 
 
 });
