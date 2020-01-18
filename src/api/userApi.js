@@ -1,23 +1,23 @@
 import 'whatwg-fetch'; 
-import getBaseURL from './baseURL';
+import getBaseUrl from './baseUrl';
 
-const baseURL = getBaseURL(); 
+const baseUrl = getBaseUrl(); 
 
 
 export function getUsers() {
     return get('users');
 }
 
-export function deleteUsers(id) {
-    return del('Users/${id}');
+export function deleteUser(id) {
+    return del(`users/${id}`);
 }
 
 function get(url){
     return fetch(baseUrl + url).then(onSuccess, onError);
 }
-// Can't call func delete since reserved word.
+// Can't call func delete since its a reserved word.
 function del(url){
-    const request = new Request(baseURL + url, {
+    const request = new Request(baseUrl + url, {
         method: 'DELETE'
     });
     return fetch(request).then(onSuccess, onError);
